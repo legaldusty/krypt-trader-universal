@@ -58,7 +58,12 @@ Everything in the trading engine, the strategies, and the Kalshi API code is unt
 
 Grab the latest `.dmg` from the [Releases](../../releases/latest) page, open it, and drag Krypt Trader to Applications. Then open **API Keys** and connect your Kalshi key + RSA private key. It starts in demo + dry-run, so nothing trades until you turn both off.
 
-> The build is not code-signed (it is a free open-source port, not a paid App Store app), so the first time you open it macOS will warn you. Just right-click the app and choose **Open**, then **Open** again. You only have to do this once. If you would rather not run my binary at all, build it yourself from source below.
+> The build is ad-hoc signed but not notarized (it is a free open-source port, not a paid Apple Developer build), so the first time you open it macOS will warn you that it cannot verify the developer. Two ways past it:
+>
+> 1. **Right-click** the app in Applications and choose **Open**, then **Open** again. You only have to do this once.
+> 2. If macOS still blocks it, run this once in Terminal: `xattr -dr com.apple.quarantine "/Applications/Krypt Trader.app"` and then open it normally.
+>
+> If you would rather not run my binary at all, build it yourself from source below.
 
 ## Build from source
 

@@ -79,6 +79,7 @@
       "buildResources": "build",
       "output": "release"
     },
+    "afterPack": "build/afterPack.cjs",
     "win": {
       "target": [
         "nsis"
@@ -95,7 +96,6 @@
       "category": "public.app-category.finance",
       "artifactName": "${productName}-${version}-${arch}.${ext}",
       "darkModeSupport": true,
-      "identity": null,
       "hardenedRuntime": false,
       "extendInfo": {
         "LSUIElement": false,
